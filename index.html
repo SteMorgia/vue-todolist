@@ -16,7 +16,7 @@
                 <input v-model="newTodo" type="text">
                 <button @click="addTodo">Aggiungi alla Lista</button>
                 <ul class="list-group">
-                    <li @click="checkDone" class="list-group-item d-flex justify-content-between" :class="(todos[indice].done==true)? myClass : '' " v-for="(todo, indice) in todos">{{todos[indice].testo}}<span @click="eliminaTodo(indice)">X</span></li>
+                    <li @click="checkDone(indice)" class="list-group-item d-flex justify-content-between" :class="(todos[indice].done==true)? myClass : '' " v-for="(todo, indice) in todos">{{todos[indice].testo}}<span @click="eliminaTodo(indice)">X</span></li>
                 </ul>
                 
                 

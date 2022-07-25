@@ -28,7 +28,8 @@ var app = new Vue({
             this.newTodo = '';
         },
         checkDone(indice){
-            this.todos[indice].done == true;
+            console.log(indice);
+            this.todos[indice].done = true;
         }
         
 
